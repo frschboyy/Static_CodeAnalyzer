@@ -79,7 +79,7 @@ Also when filing an issue, make sure to answer these five questions:
 - What did you expect to see?
 - What did you see instead?
 
-### but check existing issues and docs first!
+### but check existing issues and docs first
 
 Take a moment to check that an issue documenting your bug report or improvement proposal doesn't already exist.
 If it does, it doesn't hurts to add a quick "+1" or "I have this problem too". This will help prioritize the most common

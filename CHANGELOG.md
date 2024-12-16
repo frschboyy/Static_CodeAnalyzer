@@ -1,10 +1,10 @@
 # developing
-- [Fix issue 4961, `leafInfo.match()` use `path.join()` to deal with `wildcardValues`, which may lead to cross directory risk ](https://github.com/beego/beego/pull/4964)
+- [Fix issue 4961, `leafInfo.match()` use `path.join()` to deal with `wildcardValues`, which may lead to cross directory risk](https://github.com/beego/beego/pull/4964)
 
 # v2.1.2
 - [refactor: CONTRIBUTING.md file grammatical improvements](https://github.com/beego/beego/issues/5411)
 - [fix: refactor Count method](https://github.com/beego/beego/pull/5300)
-- [support db_type in ddl ](https://github.com/beego/beego/pull/5404)
+- [support db_type in ddl](https://github.com/beego/beego/pull/5404)
 - [orm: PostgreSQL change auto to bigserial](https://github.com/beego/beego/pull/5415)
 
 # v2.1.1
@@ -15,7 +15,7 @@
 - [fix 5255: Check the rows.Err() if rows.Next() is false](https://github.com/beego/beego/pull/5256)
 - [orm: missing handling %COL% placeholder](https://github.com/beego/beego/pull/5257)
 - [fix: use of ioutil package](https://github.com/beego/beego/pull/5261)
-- [cache/redis: support skipEmptyPrefix option ](https://github.com/beego/beego/pull/5264)
+- [cache/redis: support skipEmptyPrefix option](https://github.com/beego/beego/pull/5264)
 - [fix: refactor InsertValue method](https://github.com/beego/beego/pull/5267)
 - [fix: modify InsertOrUpdate method, Remove the isMulti variable and its associated code](https://github.com/beego/beego/pull/5269)
 - [refactor cache/redis: Use redisConfig to receive incoming JSON (previously using a map)](https://github.com/beego/beego/pull/5268)
@@ -78,7 +78,7 @@ Note: now we force the web admin service serving HTTP only.
 
 Note: now we force the web admin service serving HTTP only.
 
-- [Fix issue 4961, `leafInfo.match()` use `path.join()` to deal with `wildcardValues`, which may lead to cross directory risk ](https://github.com/beego/beego/pull/4964)
+- [Fix issue 4961, `leafInfo.match()` use `path.join()` to deal with `wildcardValues`, which may lead to cross directory risk](https://github.com/beego/beego/pull/4964)
 - [Fix 4975: graceful server listen the specific address](https://github.com/beego/beego/pull/4979)
 - [Fix 4976: make admin serve HTTP only](https://github.com/beego/beego/pull/4980)
 
@@ -87,7 +87,7 @@ Note: now we force the web admin service serving HTTP only.
 - [fix prometheus CVE-2022-21698](https://github.com/beego/beego/pull/4878)
 - [upgrade to Go 1.18](https://github.com/beego/beego/pull/4896)
 - [make `PatternLogFormatter` handling the arguments](https://github.com/beego/beego/pull/4914/files)
-- [Add httplib OpenTelemetry Filter](https://github.com/beego/beego/pull/4888, https://github.com/beego/beego/pull/4915)
+- [Add httplib OpenTelemetry Filter](<https://github.com/beego/beego/pull/4888>, <https://github.com/beego/beego/pull/4915>)
 - [Add orm OpenTelemetry Filter](https://github.com/beego/beego/issues/4944)
 - [Support NewBeegoRequestWithCtx in httplib](https://github.com/beego/beego/pull/4895)
 - [Support lifecycle callback](https://github.com/beego/beego/pull/4918)

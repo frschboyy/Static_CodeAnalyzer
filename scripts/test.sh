@@ -13,5 +13,3 @@ go test "$(pwd)/..."
 
 # clear all container
 docker-compose -f "$(pwd)/scripts/test_docker_compose.yaml" down
-
-

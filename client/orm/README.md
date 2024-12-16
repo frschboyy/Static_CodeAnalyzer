@@ -27,7 +27,7 @@ more features please read the docs
 
 **Install:**
 
-	go get github.com/beego/beego/v2/client/orm
+ go get github.com/beego/beego/v2/client/orm
 
 ## Changelog
 
@@ -44,46 +44,46 @@ more features please read the docs
 package main
 
 import (
-	"fmt"
-	"github.com/beego/beego/v2/client/orm"
-	_ "github.com/go-sql-driver/mysql" // import your used driver
+ "fmt"
+ "github.com/beego/beego/v2/client/orm"
+ _ "github.com/go-sql-driver/mysql" // import your used driver
 )
 
 // Model Struct
 type User struct {
-	Id   int    `orm:"auto"`
-	Name string `orm:"size(100)"`
+ Id   int    `orm:"auto"`
+ Name string `orm:"size(100)"`
 }
 
 func init() {
-	// register model
-	orm.RegisterModel(new(User))
+ // register model
+ orm.RegisterModel(new(User))
 
-	// set default database
-	orm.RegisterDataBase("default", "mysql", "root:root@/my_db?charset=utf8", 30)
-	
-	// create table
-	orm.RunSyncdb("default", false, true)	
+ // set default database
+ orm.RegisterDataBase("default", "mysql", "root:root@/my_db?charset=utf8", 30)
+ 
+ // create table
+ orm.RunSyncdb("default", false, true) 
 }
 
 func main() {
-	o := orm.NewOrm()
+ o := orm.NewOrm()
 
-	user := User{Name: "slene"}
+ user := User{Name: "slene"}
 
-	// insert
-	id, err := o.Insert(&user)
+ // insert
+ id, err := o.Insert(&user)
 
-	// update
-	user.Name = "astaxie"
-	num, err := o.Update(&user)
+ // update
+ user.Name = "astaxie"
+ num, err := o.Update(&user)
 
-	// read one
-	u := User{Id: user.Id}
-	err = o.Read(&u)
+ // read one
+ u := User{Id: user.Id}
+ err = o.Read(&u)
 
-	// delete
-	num, err = o.Delete(&u)	
+ // delete
+ num, err = o.Delete(&u) 
 }
 ```
 
@@ -91,9 +91,9 @@ func main() {
 
 ```go
 type Post struct {
-	Id    int    `orm:"auto"`
-	Title string `orm:"size(100)"`
-	User  *User  `orm:"rel(fk)"`
+ Id    int    `orm:"auto"`
+ Title string `orm:"size(100)"`
+ User  *User  `orm:"rel(fk)"`
 }
 
 var posts []*Post
@@ -109,7 +109,7 @@ If you don't like ORM，use Raw SQL to query / mapping without ORM setting
 var maps []Params
 num, err := o.Raw("SELECT id FROM user WHERE name = ?", "slene").Values(&maps)
 if num > 0 {
-	fmt.Println(maps[0]["id"])
+ fmt.Println(maps[0]["id"])
 }
 ```
 
@@ -121,9 +121,9 @@ o.Begin()
 user := User{Name: "slene"}
 id, err := o.Insert(&user)
 if err == nil {
-	o.Commit()
+ o.Commit()
 } else {
-	o.Rollback()
+ o.Rollback()
 }
 
 ```
@@ -134,7 +134,7 @@ In development env, you can simple use
 
 ```go
 func main() {
-	orm.Debug = true
+ orm.Debug = true
 ...
 ```
 
